@@ -25,24 +25,6 @@ class Solution(object):
                 i += 1
         else:
             return s
-        '''
-        col = 0
-        while row < numRows:
-            row_text = []
-            while col < len(s):
-                row_text.append(s[col])
-                print(row, col, s[col])
-                col += 2 * (numRows - 1)
-            row += 1
-            col = row
-            converted = converted + ''.join(row_text)
-
-        
-        for i in range(len(s)):
-            location = i % len(s)
-            converted.append(s[i])
-        return ''.join(converted)
-        '''
         return ''.join(converted)
 
 

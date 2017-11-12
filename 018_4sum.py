@@ -22,7 +22,6 @@ class Solution(object):
                     elif sum < target:
                         left += 1
                     else:
-                        # if [nums[i], nums[left], nums[right]] not in results:
                         results.append([nums[i], nums[j], nums[left], nums[right]])
                         left += 1
                         right -= 1
@@ -38,7 +37,7 @@ class Solution(object):
                             pass
         return results
 
-# print(Solution().fourSum([1, 0, -1, 0, -2, 2], 0))
+print(Solution().fourSum([1, 0, -1, 0, -2, 2], 0))
 
 print(Solution().fourSum([0, 0, 0, 0], 0))
 

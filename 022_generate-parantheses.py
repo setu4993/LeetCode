@@ -17,24 +17,6 @@ class Solution(object):
         paranthesis(n - 1, n, "(")
 
         return parantheses
-        '''        
-        if n > 1:
-            generated = Solution().generateParenthesis(n - 1)
-            for g in generated:
-                parantheses.append("(" + g + ")")
-                parantheses.append("()" + g)
-                if g + "()" != "()" + g:
-                    parantheses.append(g + "()")
-            return parantheses
-        elif n == 1:
-            return ["()"]
-        else:
-            return []
-        '''
-# print(Solution().generateParenthesis(2))
-# print(Solution().generateParenthesis(3))
+print(Solution().generateParenthesis(2))
+print(Solution().generateParenthesis(3))
 print(Solution().generateParenthesis(4))
-
-# ['()(())()']
-
-# ["(())(())"]

@@ -28,8 +28,6 @@ class Solution(object):
                 break
 
         return new_head.next
-        # a -> b -> c -> d
-        # b -> a -> d -> c
 
 
 def CreateList(num_list):
