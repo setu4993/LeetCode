@@ -7,19 +7,17 @@ class Solution(object):
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
-        i = 0
-        j = 0
-        while i < m and j < n:
-            if nums1[i] > nums2[j]:
-                nums1.insert(i, nums2[j])
-                j += 1
+        while 0 < m and 0 < n:
+            if nums1[m - 1] < nums2[n - 1]:
+                nums1[m + n - 1] = nums2[n - 1]
+                n -= 1
             else:
-                i += 1
+                nums1[m + n - 1] = nums1[m - 1]
+                m -= 1
 
-        while j < n:
-            nums1.append(nums2[j])
-            j += 1
+        while 0 < n:
+            nums1[m + n - 1] = nums2[n - 1]
+            n -= 1
 
-        print(nums1)
 
-Solution().merge([0, 2, 4], 3, [1, 3, 5, 6], 4)
+Solution().merge([1, 3, 5, 7], 4, [0, 2, 4, 6], 4)

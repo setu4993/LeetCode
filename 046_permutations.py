@@ -16,4 +16,4 @@ class Solution(object):
             perms.append(nums)
         return perms
 
-print(Solution().permute([1, 1, 2]))
+print(Solution().permute([1, 2, 3]))
